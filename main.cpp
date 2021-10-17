@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include <forward_list>
 #include <algorithm>
-#include <limits>
+#include <linux/limits.h>
 
 using namespace std;
 
