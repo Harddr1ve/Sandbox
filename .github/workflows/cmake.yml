@@ -68,4 +68,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: App-win
-          path: ${{github.workspace}}
+          path: ${{github.workspace}}/Release/CLIon.exe
