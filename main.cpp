@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include <forward_list>
 #include <algorithm>
-#include <linux/limits.h>
+#define PATH_MAX 290
 
 using namespace std;
 
