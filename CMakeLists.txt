@@ -4,7 +4,10 @@ project(CLIon)
 set(CMAKE_CXX_STANDARD 14)
 
 include(AddGitSubmodule.cmake)
-add_git_submodule(lib/googletest)
+
+if(NOT TARGET lib/googletest)
+    add_git_submodule(lib/googletest)
+endif()
 include_directories(lib/googletest/googletest)
 include_directories(lib/googletest/googlemock)
 add_executable(CLIon main.cpp)
